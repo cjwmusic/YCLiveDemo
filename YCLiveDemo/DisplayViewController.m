@@ -75,7 +75,6 @@
 	_isAudioLinkConnected = FALSE;
 	_isMicOpened = FALSE;
 	_isAudioMute = FALSE;
-	
 	_chatArrary = [[NSMutableArray alloc] init];
 	
 	//创建一个导航栏
@@ -91,13 +90,9 @@
 	_mainView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, APP_SCREEN_WIDTH, APP_SCREEN_HEIGHT-44)];
 	[self.view addSubview:_mainView];
 	
-    
-
-    	//创建渲染视频流所需的view
+    //创建渲染视频流所需的view
     _remoteVideoView = [self createVideoView:VIDEO_REMOTE_RECT];
     [_mainView addSubview:_remoteVideoView];
-
-    
     
 	CGRect mainRect = [_mainView bounds];
 
@@ -187,11 +182,6 @@
 	[self signalLoginAp:nsUid];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)viewDidUnload
 {
 	[UIApplication sharedApplication].idleTimerDisabled = NO;
@@ -202,8 +192,10 @@
 {
 	NSLog(@"initMediaSDK sdk version: %@", [YCMediaSDK getSdkVersion]);
 
+    //创建session
 	_channelSession = [[YCMediaSDK sharedInstance] createChannelSession];
-	_channelSession.delegate = self; //TODO ChannelSessionDelegate
+    //设置session的delegate
+	_channelSession.delegate = self;
 	
 	//参数配置
 	NSDictionary* configs = [[NSDictionary alloc] initWithObjectsAndKeys:
@@ -217,10 +209,10 @@
 							 [NSNumber numberWithInt:700], [NSNumber numberWithInt:CONFIG_KEY_CUR_CODERATE],
 							 [NSNumber numberWithInt:1], [NSNumber numberWithInt:CONFIG_KEY_USE_CRCONTROL],
 							 nil];
-							 
-
+    
 	[_channelSession setConfigs:kYCAppId configs:configs];
 }
+
 
 - (YCVideoView*)createVideoView:(CGRect)frame
 {
@@ -232,6 +224,10 @@
 	videoView.transform = CGAffineTransformMakeRotation(0);
 	return videoView;
 }
+
+
+#pragma mark -
+#pragma mark KeyBoard Events
 
 - (void)keyboardWillShow
 {
@@ -261,7 +257,8 @@
 	[UIView commitAnimations];
 }
 
-#pragma mark ----------- button operateration------------
+#pragma mark - 
+#pragma mark Button touch events
 //返回login界面
 -(void)backLoginView
 {
@@ -397,7 +394,8 @@
 	
 }
 
-#pragma mark - TextField degate source
+#pragma mark - 
+#pragma mark TextField delegate
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
 	//[self removeCombox];
@@ -427,7 +425,10 @@ replacementString:(NSString *)string
 		chatTextInfo.height = 0; //使用默认值
 		chatTextInfo.color = 0;
 		
+        //发送文本消息
 		[_channelSession sendChatText: chatTextInfo];
+        
+        //刷新tableView
 		[_chatArrary addObject:chatTextInfo];
 		[_tableView reloadData];
 		
@@ -495,7 +496,9 @@ replacementString:(NSString *)string
 }
 
 
-#pragma mark -------------------------------ChannelSessionDelegate begin----------------------------------------------------
+#pragma mark - 
+#pragma mark ChannelSessionDelegate
+
 - (void)onAudioLinkStatus:(uint32_t)state ip:(uint32_t)ip port:(uint16_t)port
 {
 	NSLog(@"[callBack] onAudioLinkStatus, state %u, ip %u, port %u", state, ip, port);
@@ -626,9 +629,13 @@ replacementString:(NSString *)string
 	}
 }
 
-#pragma mark  -----------------------signal operation------------------------------------
--(void) signalLoginAp:(NSNumber*)uid
+#pragma mark -
+#pragma mark signal operation
+
+-(void)signalLoginAp:(NSNumber*)uid
 {
+    
+    //首先获得Token
 	binToken = [self getYCMediaTokenFromHttp:[NSString stringWithFormat:@"%d",kYCAppId] userId:_uid sessionId:_sid];
 	if(binToken == nil)
 	{
