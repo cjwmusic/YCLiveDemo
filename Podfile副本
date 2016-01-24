@@ -1,0 +1,23 @@
+platform :ios, '6.0'
+pod 'smartdnsdk', :podspec => 'http://repo.yypm.com/dwintegrate/specs/smartdnsdk/1.0.0/smartdnsdk.podspec'
+pod 'GPUImage', :podspec => 'http://repo.yypm.com/dwintegrate/specs/GPUImageSDK/0.2.01-dev/gpuimagesdk.podspec'
+pod 'openssl', :podspec => 'http://repo.yypm.com/dwintegrate/specs/openssl/1.0.1e/openssl.podspec'
+
+source 'http://code.yy.com/ci_team/Specs.git'
+pod 'ffmpeg/ffmpeg-271-ios', '271150819.4811.0'
+pod 'mediacommonsdk', '2.0.5'
+pod 'audioenginesdk', '1.1.4'
+pod 'libyuv', '1194.4653.0'
+pod 'ycsignalsdk', '0.0.27-dev'
+pod 'hdstatsdk', '3.1.9'
+pod 'yyprotosdk', '500.307.13-dev'
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ONLY_ACTIVE_ARCH'] = "NO"
+    end
+  end
+end
+
+

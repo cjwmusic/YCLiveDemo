@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4300B64C1A4BB85E00C9483F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4300B6361A4BB85E00C9483F /* AppDelegate.m */; };
+		4300B64D1A4BB85E00C9483F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4300B6371A4BB85E00C9483F /* LaunchScreen.xib */; };
+		4300B64E1A4BB85E00C9483F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4300B6391A4BB85E00C9483F /* Main.storyboard */; };
+		4300B64F1A4BB85E00C9483F /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4300B63C1A4BB85E00C9483F /* DisplayViewController.m */; };
+		4300B6571A4BB85E00C9483F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4300B6451A4BB85E00C9483F /* Images.xcassets */; };
+		4300B6591A4BB85E00C9483F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4300B6481A4BB85E00C9483F /* LoginViewController.m */; };
+		4300B65A1A4BB85E00C9483F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4300B6491A4BB85E00C9483F /* main.m */; };
+		43D147E01A49B32100A1AF57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147DF1A49B32100A1AF57 /* SystemConfiguration.framework */; };
+		43D147E21A49B33400A1AF57 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147E11A49B33400A1AF57 /* MobileCoreServices.framework */; };
+		43D147E41A49B33D00A1AF57 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147E31A49B33D00A1AF57 /* CFNetwork.framework */; };
+		43D147E71A49B35000A1AF57 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147E51A49B35000A1AF57 /* AudioToolbox.framework */; };
+		43D147EA1A49B36500A1AF57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147E91A49B36500A1AF57 /* AVFoundation.framework */; };
+		43D147F81A49B3C500A1AF57 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147F11A49B3C500A1AF57 /* CoreMedia.framework */; };
+		43D147F91A49B3C500A1AF57 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147F21A49B3C500A1AF57 /* CoreMotion.framework */; };
+		43D147FA1A49B3C500A1AF57 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147F31A49B3C500A1AF57 /* CoreTelephony.framework */; };
+		43D147FB1A49B3C500A1AF57 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D147F41A49B3C500A1AF57 /* CoreText.framework */; };
+		43DF69981AE0DE1400FB50A1 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DF69971AE0DE1400FB50A1 /* VideoToolbox.framework */; };
+		43FDACD51BD616A500059E0E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D148001A49B4B200A1AF57 /* libc++.dylib */; };
+		43FDACD61BD616AF00059E0E /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D148021A49B4BD00A1AF57 /* libstdc++.dylib */; };
+		4730C4641BCBA0E400226BF4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D148041A49B53400A1AF57 /* libz.dylib */; };
+		6767347E1C52490900B966CB /* libaudio_engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734721C52490900B966CB /* libaudio_engine.a */; };
+		6767347F1C52490900B966CB /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734731C52490900B966CB /* libcrypto.a */; };
+		676734801C52490900B966CB /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734741C52490900B966CB /* libGPUImage.a */; };
+		676734811C52490900B966CB /* libHiidoSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734751C52490900B966CB /* libHiidoSDK.a */; };
+		676734821C52490900B966CB /* libmediacodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734761C52490900B966CB /* libmediacodec.a */; };
+		676734831C52490900B966CB /* libsmartdns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734771C52490900B966CB /* libsmartdns.a */; };
+		676734841C52490900B966CB /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734781C52490900B966CB /* libssl.a */; };
+		676734851C52490900B966CB /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 676734791C52490900B966CB /* libx264.a */; };
+		676734861C52490900B966CB /* libYCMediaSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767347A1C52490900B966CB /* libYCMediaSDK.a */; };
+		676734871C52490900B966CB /* libycsignalsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767347B1C52490900B966CB /* libycsignalsdk.a */; };
+		676734881C52490900B966CB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767347C1C52490900B966CB /* libyuv.a */; };
+		676734891C52490900B966CB /* libyympeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767347D1C52490900B966CB /* libyympeg.a */; };
+		6767348B1C5255ED00B966CB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767348A1C5255ED00B966CB /* libz.tbd */; };
+		6767348D1C5255F700B966CB /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767348C1C5255F700B966CB /* libbz2.tbd */; };
+		6767348F1C52560100B966CB /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6767348E1C52560100B966CB /* libstdc++.6.0.9.tbd */; };
+		8447991D1BFC84CF00E980D9 /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8447991C1BFC84CF00E980D9 /* Bugly.framework */; };
+		845EAFF81B62271D00732230 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 845EAFF71B62271D00732230 /* GTMBase64.m */; };
+		849FDC961A66ACD200E25404 /* btn_audio_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC8F1A66ACD200E25404 /* btn_audio_off.png */; };
+		849FDC971A66ACD200E25404 /* btn_audio_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC901A66ACD200E25404 /* btn_audio_on.png */; };
+		849FDC981A66ACD200E25404 /* btn_camera_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC911A66ACD200E25404 /* btn_camera_switch.png */; };
+		849FDC991A66ACD200E25404 /* btn_video_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC921A66ACD200E25404 /* btn_video_off.png */; };
+		849FDC9A1A66ACD200E25404 /* btn_video_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC931A66ACD200E25404 /* btn_video_on.png */; };
+		849FDC9B1A66ACD200E25404 /* mic_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC941A66ACD200E25404 /* mic_disabled.png */; };
+		849FDC9C1A66ACD200E25404 /* mic_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 849FDC951A66ACD200E25404 /* mic_enabled.png */; };
+		F2076BA4064617D69520949F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7041F292732A59C2DA4E860B /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4300B6351A4BB85E00C9483F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4300B6361A4BB85E00C9483F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4300B6381A4BB85E00C9483F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4300B63A1A4BB85E00C9483F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4300B63B1A4BB85E00C9483F /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		4300B63C1A4BB85E00C9483F /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		4300B6451A4BB85E00C9483F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4300B6471A4BB85E00C9483F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4300B6481A4BB85E00C9483F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4300B6491A4BB85E00C9483F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4326BE5C1BF2EE2D00BC8F33 /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		437F413C1A4970230036D556 /* YCLiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YCLiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D147DF1A49B32100A1AF57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		43D147E11A49B33400A1AF57 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		43D147E31A49B33D00A1AF57 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		43D147E51A49B35000A1AF57 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		43D147E61A49B35000A1AF57 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		43D147E91A49B36500A1AF57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		43D147EB1A49B37600A1AF57 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		43D147EC1A49B37600A1AF57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		43D147EF1A49B3C500A1AF57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		43D147F01A49B3C500A1AF57 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		43D147F11A49B3C500A1AF57 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		43D147F21A49B3C500A1AF57 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		43D147F31A49B3C500A1AF57 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		43D147F41A49B3C500A1AF57 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		43D147F51A49B3C500A1AF57 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		43D147FD1A49B41900A1AF57 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		43D148001A49B4B200A1AF57 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		43D148021A49B4BD00A1AF57 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		43D148041A49B53400A1AF57 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		43D148321A4AA94E00A1AF57 /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		43DF69971AE0DE1400FB50A1 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		4794DFB61B8C44860063EB53 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		676734721C52490900B966CB /* libaudio_engine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libaudio_engine.a; path = ../../libs/libaudio_engine.a; sourceTree = "<group>"; };
+		676734731C52490900B966CB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../libs/libcrypto.a; sourceTree = "<group>"; };
+		676734741C52490900B966CB /* libGPUImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGPUImage.a; path = ../../libs/libGPUImage.a; sourceTree = "<group>"; };
+		676734751C52490900B966CB /* libHiidoSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libHiidoSDK.a; path = ../../libs/libHiidoSDK.a; sourceTree = "<group>"; };
+		676734761C52490900B966CB /* libmediacodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmediacodec.a; path = ../../libs/libmediacodec.a; sourceTree = "<group>"; };
+		676734771C52490900B966CB /* libsmartdns.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsmartdns.a; path = ../../libs/libsmartdns.a; sourceTree = "<group>"; };
+		676734781C52490900B966CB /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../libs/libssl.a; sourceTree = "<group>"; };
+		676734791C52490900B966CB /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = ../../libs/libx264.a; sourceTree = "<group>"; };
+		6767347A1C52490900B966CB /* libYCMediaSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYCMediaSDK.a; path = ../../libs/libYCMediaSDK.a; sourceTree = "<group>"; };
+		6767347B1C52490900B966CB /* libycsignalsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libycsignalsdk.a; path = ../../libs/libycsignalsdk.a; sourceTree = "<group>"; };
+		6767347C1C52490900B966CB /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyuv.a; path = ../../libs/libyuv.a; sourceTree = "<group>"; };
+		6767347D1C52490900B966CB /* libyympeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libyympeg.a; path = ../../libs/libyympeg.a; sourceTree = "<group>"; };
+		6767348A1C5255ED00B966CB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6767348C1C5255F700B966CB /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		6767348E1C52560100B966CB /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		7041F292732A59C2DA4E860B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8447991C1BFC84CF00E980D9 /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = "YCLiveDemo/Bugly-v1.4.2/libstdc++/Bugly.framework"; sourceTree = "<group>"; };
+		845EAFF61B62271D00732230 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		845EAFF71B62271D00732230 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		849FDC8C1A66ACAF00E25404 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849FDC8F1A66ACD200E25404 /* btn_audio_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_audio_off.png; sourceTree = "<group>"; };
+		849FDC901A66ACD200E25404 /* btn_audio_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_audio_on.png; sourceTree = "<group>"; };
+		849FDC911A66ACD200E25404 /* btn_camera_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_camera_switch.png; sourceTree = "<group>"; };
+		849FDC921A66ACD200E25404 /* btn_video_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_video_off.png; sourceTree = "<group>"; };
+		849FDC931A66ACD200E25404 /* btn_video_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_video_on.png; sourceTree = "<group>"; };
+		849FDC941A66ACD200E25404 /* mic_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_disabled.png; sourceTree = "<group>"; };
+		849FDC951A66ACD200E25404 /* mic_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_enabled.png; sourceTree = "<group>"; };
+		8B873D775F078347768C471F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F0EEFA8267056A543FE004C6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		437F41391A4970230036D556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6767348F1C52560100B966CB /* libstdc++.6.0.9.tbd in Frameworks */,
+				6767348D1C5255F700B966CB /* libbz2.tbd in Frameworks */,
+				6767348B1C5255ED00B966CB /* libz.tbd in Frameworks */,
+				43D147E21A49B33400A1AF57 /* MobileCoreServices.framework in Frameworks */,
+				43D147E01A49B32100A1AF57 /* SystemConfiguration.framework in Frameworks */,
+				43DF69981AE0DE1400FB50A1 /* VideoToolbox.framework in Frameworks */,
+				43D147E71A49B35000A1AF57 /* AudioToolbox.framework in Frameworks */,
+				43D147EA1A49B36500A1AF57 /* AVFoundation.framework in Frameworks */,
+				43D147E41A49B33D00A1AF57 /* CFNetwork.framework in Frameworks */,
+				43D147FA1A49B3C500A1AF57 /* CoreTelephony.framework in Frameworks */,
+				43D147F91A49B3C500A1AF57 /* CoreMotion.framework in Frameworks */,
+				43D147F81A49B3C500A1AF57 /* CoreMedia.framework in Frameworks */,
+				6767347E1C52490900B966CB /* libaudio_engine.a in Frameworks */,
+				6767347F1C52490900B966CB /* libcrypto.a in Frameworks */,
+				676734801C52490900B966CB /* libGPUImage.a in Frameworks */,
+				676734811C52490900B966CB /* libHiidoSDK.a in Frameworks */,
+				676734821C52490900B966CB /* libmediacodec.a in Frameworks */,
+				676734831C52490900B966CB /* libsmartdns.a in Frameworks */,
+				676734841C52490900B966CB /* libssl.a in Frameworks */,
+				676734851C52490900B966CB /* libx264.a in Frameworks */,
+				676734861C52490900B966CB /* libYCMediaSDK.a in Frameworks */,
+				676734871C52490900B966CB /* libycsignalsdk.a in Frameworks */,
+				676734881C52490900B966CB /* libyuv.a in Frameworks */,
+				676734891C52490900B966CB /* libyympeg.a in Frameworks */,
+				43FDACD61BD616AF00059E0E /* libstdc++.dylib in Frameworks */,
+				43FDACD51BD616A500059E0E /* libc++.dylib in Frameworks */,
+				8447991D1BFC84CF00E980D9 /* Bugly.framework in Frameworks */,
+				4730C4641BCBA0E400226BF4 /* libz.dylib in Frameworks */,
+				43D147FB1A49B3C500A1AF57 /* CoreText.framework in Frameworks */,
+				F2076BA4064617D69520949F /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4300B6341A4BB85E00C9483F /* YCloudLiveDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4326BE5C1BF2EE2D00BC8F33 /* AppInfo.h */,
+				845EAFF51B62271D00732230 /* GTMBase64 */,
+				849FDC8E1A66ACD200E25404 /* images */,
+				849FDC8C1A66ACAF00E25404 /* Info.plist */,
+				4300B6351A4BB85E00C9483F /* AppDelegate.h */,
+				4300B6361A4BB85E00C9483F /* AppDelegate.m */,
+				4300B6371A4BB85E00C9483F /* LaunchScreen.xib */,
+				4300B6391A4BB85E00C9483F /* Main.storyboard */,
+				4300B63B1A4BB85E00C9483F /* DisplayViewController.h */,
+				4300B63C1A4BB85E00C9483F /* DisplayViewController.m */,
+				4300B6451A4BB85E00C9483F /* Images.xcassets */,
+				4300B6471A4BB85E00C9483F /* LoginViewController.h */,
+				4300B6481A4BB85E00C9483F /* LoginViewController.m */,
+				4300B6491A4BB85E00C9483F /* main.m */,
+			);
+			name = YCloudLiveDemo;
+			path = YCLiveDemo;
+			sourceTree = "<group>";
+		};
+		437F41331A4970230036D556 = {
+			isa = PBXGroup;
+			children = (
+				43D147DC1A49B2AB00A1AF57 /* Frameworks */,
+				437F413D1A4970230036D556 /* Products */,
+				4300B6341A4BB85E00C9483F /* YCloudLiveDemo */,
+				8BF73BFDB1D1E85A711B82D5 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		437F413D1A4970230036D556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437F413C1A4970230036D556 /* YCLiveDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43D147DC1A49B2AB00A1AF57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6767348E1C52560100B966CB /* libstdc++.6.0.9.tbd */,
+				6767348C1C5255F700B966CB /* libbz2.tbd */,
+				6767348A1C5255ED00B966CB /* libz.tbd */,
+				676734721C52490900B966CB /* libaudio_engine.a */,
+				676734731C52490900B966CB /* libcrypto.a */,
+				676734741C52490900B966CB /* libGPUImage.a */,
+				676734751C52490900B966CB /* libHiidoSDK.a */,
+				676734761C52490900B966CB /* libmediacodec.a */,
+				676734771C52490900B966CB /* libsmartdns.a */,
+				676734781C52490900B966CB /* libssl.a */,
+				676734791C52490900B966CB /* libx264.a */,
+				6767347A1C52490900B966CB /* libYCMediaSDK.a */,
+				6767347B1C52490900B966CB /* libycsignalsdk.a */,
+				6767347C1C52490900B966CB /* libyuv.a */,
+				6767347D1C52490900B966CB /* libyympeg.a */,
+				8447991C1BFC84CF00E980D9 /* Bugly.framework */,
+				4794DFB61B8C44860063EB53 /* libbz2.dylib */,
+				43DF69971AE0DE1400FB50A1 /* VideoToolbox.framework */,
+				43D148321A4AA94E00A1AF57 /* libstdc++.6.0.9.dylib */,
+				43D148041A49B53400A1AF57 /* libz.dylib */,
+				43D148021A49B4BD00A1AF57 /* libstdc++.dylib */,
+				43D148001A49B4B200A1AF57 /* libc++.dylib */,
+				43D147FD1A49B41900A1AF57 /* OpenGLES.framework */,
+				43D147EF1A49B3C500A1AF57 /* CoreGraphics.framework */,
+				43D147F01A49B3C500A1AF57 /* CoreImage.framework */,
+				43D147F11A49B3C500A1AF57 /* CoreMedia.framework */,
+				43D147F21A49B3C500A1AF57 /* CoreMotion.framework */,
+				43D147F31A49B3C500A1AF57 /* CoreTelephony.framework */,
+				43D147F41A49B3C500A1AF57 /* CoreText.framework */,
+				43D147F51A49B3C500A1AF57 /* CoreVideo.framework */,
+				43D147EB1A49B37600A1AF57 /* CoreFoundation.framework */,
+				43D147EC1A49B37600A1AF57 /* Foundation.framework */,
+				43D147E91A49B36500A1AF57 /* AVFoundation.framework */,
+				43D147E51A49B35000A1AF57 /* AudioToolbox.framework */,
+				43D147E61A49B35000A1AF57 /* CoreAudio.framework */,
+				43D147E31A49B33D00A1AF57 /* CFNetwork.framework */,
+				43D147E11A49B33400A1AF57 /* MobileCoreServices.framework */,
+				43D147DF1A49B32100A1AF57 /* SystemConfiguration.framework */,
+				7041F292732A59C2DA4E860B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		845EAFF51B62271D00732230 /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				845EAFF61B62271D00732230 /* GTMBase64.h */,
+				845EAFF71B62271D00732230 /* GTMBase64.m */,
+			);
+			path = GTMBase64;
+			sourceTree = "<group>";
+		};
+		849FDC8E1A66ACD200E25404 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				849FDC8F1A66ACD200E25404 /* btn_audio_off.png */,
+				849FDC901A66ACD200E25404 /* btn_audio_on.png */,
+				849FDC911A66ACD200E25404 /* btn_camera_switch.png */,
+				849FDC921A66ACD200E25404 /* btn_video_off.png */,
+				849FDC931A66ACD200E25404 /* btn_video_on.png */,
+				849FDC941A66ACD200E25404 /* mic_disabled.png */,
+				849FDC951A66ACD200E25404 /* mic_enabled.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8BF73BFDB1D1E85A711B82D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B873D775F078347768C471F /* Pods.debug.xcconfig */,
+				F0EEFA8267056A543FE004C6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437F413B1A4970230036D556 /* YCLiveDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437F415F1A4970230036D556 /* Build configuration list for PBXNativeTarget "YCLiveDemo" */;
+			buildPhases = (
+				9DDC00933AAD86CB2BDB8C0E /* Check Pods Manifest.lock */,
+				437F41381A4970230036D556 /* Sources */,
+				437F41391A4970230036D556 /* Frameworks */,
+				437F413A1A4970230036D556 /* Resources */,
+				FF5EE4470B31EDE7988A1D7C /* Embed Pods Frameworks */,
+				C84B290D509C15A6F776105C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YCLiveDemo;
+			productName = YCloudVoipDemo;
+			productReference = 437F413C1A4970230036D556 /* YCLiveDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		437F41341A4970230036D556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = duowan;
+				TargetAttributes = {
+					437F413B1A4970230036D556 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = R6WEZ2537W;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 437F41371A4970230036D556 /* Build configuration list for PBXProject "YCLiveDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 437F41331A4970230036D556;
+			productRefGroup = 437F413D1A4970230036D556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				437F413B1A4970230036D556 /* YCLiveDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		437F413A1A4970230036D556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4300B6571A4BB85E00C9483F /* Images.xcassets in Resources */,
+				849FDC9C1A66ACD200E25404 /* mic_enabled.png in Resources */,
+				849FDC981A66ACD200E25404 /* btn_camera_switch.png in Resources */,
+				4300B64E1A4BB85E00C9483F /* Main.storyboard in Resources */,
+				849FDC9A1A66ACD200E25404 /* btn_video_on.png in Resources */,
+				849FDC991A66ACD200E25404 /* btn_video_off.png in Resources */,
+				849FDC971A66ACD200E25404 /* btn_audio_on.png in Resources */,
+				4300B64D1A4BB85E00C9483F /* LaunchScreen.xib in Resources */,
+				849FDC9B1A66ACD200E25404 /* mic_disabled.png in Resources */,
+				849FDC961A66ACD200E25404 /* btn_audio_off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DDC00933AAD86CB2BDB8C0E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C84B290D509C15A6F776105C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF5EE4470B31EDE7988A1D7C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437F41381A4970230036D556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4300B64F1A4BB85E00C9483F /* DisplayViewController.m in Sources */,
+				4300B6591A4BB85E00C9483F /* LoginViewController.m in Sources */,
+				845EAFF81B62271D00732230 /* GTMBase64.m in Sources */,
+				4300B65A1A4BB85E00C9483F /* main.m in Sources */,
+				4300B64C1A4BB85E00C9483F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4300B6371A4BB85E00C9483F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4300B6381A4BB85E00C9483F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		4300B6391A4BB85E00C9483F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4300B63A1A4BB85E00C9483F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		437F415D1A4970230036D556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "i386 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		437F415E1A4970230036D556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 armv7 armv7s";
+			};
+			name = Release;
+		};
+		437F41601A4970230036D556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B873D775F078347768C471F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YCLiveDemo/Bugly-v1.4.2/libstdc++",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../outlet/ios/include",
+					"$(SRCROOT)/../../include",
+					"$(SRCROOT)/../../include/ycsignalsdk",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YCLiveDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../depends/libs/ios",
+					"$(SRCROOT)/../../../outlet/ios/libs",
+					"$(SRCROOT)/../../libs",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 i386 armv7s arm64";
+			};
+			name = Debug;
+		};
+		437F41611A4970230036D556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0EEFA8267056A543FE004C6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YCLiveDemo/Bugly-v1.4.2/libstdc++",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../outlet/ios/include",
+					"$(SRCROOT)/../../include",
+					"$(SRCROOT)/../../include/ycsignalsdk",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/YCLiveDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../../depends/libs/ios",
+					"$(SRCROOT)/../../../outlet/ios/libs",
+					"$(SRCROOT)/../../libs",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "armv7 i386 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437F41371A4970230036D556 /* Build configuration list for PBXProject "YCLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F415D1A4970230036D556 /* Debug */,
+				437F415E1A4970230036D556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437F415F1A4970230036D556 /* Build configuration list for PBXNativeTarget "YCLiveDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F41601A4970230036D556 /* Debug */,
+				437F41611A4970230036D556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 437F41341A4970230036D556 /* Project object */;
+}
